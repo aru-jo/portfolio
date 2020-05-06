@@ -51,6 +51,9 @@
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
   }
+  .footer-font{
+    font-family: 'cmu_serifroman', Arial, sans-serif;
+  }
   .blog-footer p:last-child {
     margin-bottom: 0;
   }

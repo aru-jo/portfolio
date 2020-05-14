@@ -5,6 +5,13 @@
     font-style: normal;
 
 }
+  .tight{
+    margin: auto;
+  }
+
+  .lalign{
+    text-align: left; 
+  }
 
   .blog-header {
     line-height: 1;

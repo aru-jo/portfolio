@@ -65,6 +65,9 @@
   .card-color-4{
     background-color: #6B7C93;
   }
+  .card-color-0{
+    background-color: black;
+  }
   .text-color-white{
     color: white;
     font-weight: bold; 

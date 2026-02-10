@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'cmu_serifroman';
-    src: url('cmunrm-webfont.woff') format('woff');
+    src: url('cmunrm-webfont.woff') format('woff'),
+         url('cmunrm-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -53,18 +54,6 @@
     font-size: 1.15rem;
     font-weight: bold;  
   }
-  .card-color-1{
-    background-color: #6772E5;
-  }
-  .card-color-2{
-    background-color: #408AF8;
-  }
-  .card-color-3{
-    background-color: #3ECF8E;
-  }
-  .card-color-4{
-    background-color: #6B7C93;
-  }
   .card-color-0{
     background-color: black;
   }
@@ -76,21 +65,12 @@
   .link-color-1{
     color: #6772E5;
   }
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 1px solid #e5e5e5; }
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
   
   /*
    * Footer
    */
 
-  .blog-footer {
-    padding: 2.5rem 0;
-    color: #999;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
-  }
   .footer-font{
     font-family: 'cmu_serifroman', Arial, sans-serif;
   }

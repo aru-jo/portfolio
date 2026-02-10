@@ -1,65 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{{ page.title }} - Aravind Jyothi</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styling/stylesheet.css" type="text/css" charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-        <link rel="alternate" type="application/atom+xml" title="Feed" href="/feed.xml">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <header class="blog-header py-3">
-                <div class="text-center">
-                    <div class="blog-header-logo text-dark">
-                        Aravind Jyothi
-                    </div>
-                </div>
-            </header>
-            <nav class="navbar navbar-light justify-content-center">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/images/svg/home.svg" width="60" height="60" class="d-inline-block align-top" alt="Home">
-                </a>
-                <a class="navbar-brand" href="/uploads/AJ_resume_2026.pdf">
-                    <img src="/images/svg/resume.svg" width="60" height="60" class="d-inline-block align-top" alt="Resume">
-                </a>
-                <a class="navbar-brand" href="/blog/">
-                    <img src="/images/svg/blog.svg" width="60" height="60" class="d-inline-block align-top" alt="Blog">
-                </a>
-            </nav>
-            <div class="row">
-                <div class="col-md-12 blog-main">
-                    <h3 class="pb-3 mb-4 border-bottom font-italic text-center">
-                        {{ page.title }}
-                    </h3>
-                    <p class="text-muted text-center blog-post-meta">
-                        {{ page.date | date: "%B %d, %Y" }}
-                    </p>
-                    <div class="blog-post-content">
-                        {{ content }}
-                    </div>
-                    <div class="text-center py-3">
-                        <a href="/blog/" class="link-color-1">&larr; Back to all posts</a>
-                    </div>
-                </div>
-            </div>
-            <footer class="pt-4 my-md-5 pt-md-5 border-top">
-                <div class="row footer-font">
-                    <div class="col-12 col-md">
-                        <p><small class="d-block mb-3 text-muted text-center footer-font"><img src="/images/svg/location.svg" height="25px" width="25px"> Redmond, WA</small></p>
-                    </div>
-                </div>
-                <div class="row footer-font">
-                    <div class="col-12 col-md">
-                        <p><small class="d-block mb-3 text-muted text-center"> &copy; Aravind Jyothi, 2026. </small></p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </body>
-</html>
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+<p class="blog-post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+
+<div class="blog-post-content">
+    {{ content }}
+</div>
+
+<p><a href="/blog/">&larr; Back to all posts</a></p>

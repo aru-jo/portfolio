@@ -1,0 +1,16 @@
+title: Aravind Jyothi
+url: "https://aravindjyothi.dev"
+baseurl: ""
+description: "Aravind Jyothi's blog"
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+plugins:
+  - jekyll-feed

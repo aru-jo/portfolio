@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title and page.title != "Home" %}{{ page.title }} - {% endif %}Aravind Jyothi</title>
+    <link rel="stylesheet" href="/styling/stylesheet.css" type="text/css" />
+    {% if page.layout == 'post' or page.url == '/blog/' %}
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="/feed.xml">
+    {% endif %}
+</head>
+<body>
+    <div class="site-header">Aravind Jyothi</div>
+    <nav>
+        <a href="/">Home</a> &middot;
+        <a href="/uploads/AJ_resume_2026.pdf">Resume</a> &middot;
+        <a href="/blog/">Blog</a>
+    </nav>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        Redmond, WA<br>
+        &copy; Aravind Jyothi, 2026.
+    </footer>
+</body>
+</html>
